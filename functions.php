@@ -310,6 +310,11 @@ function twentyfifteen_search_form_modify( $html ) {
 add_filter( 'get_search_form', 'twentyfifteen_search_form_modify' );
 
 /**
+ * Hide admin bar
+ */
+add_filter('show_admin_bar', '__return_false');
+
+/**
  * Implement the Custom Header feature.
  *
  * @since Twenty Fifteen 1.0
